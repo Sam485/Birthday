@@ -1,0 +1,37 @@
+@use '../components/mixin.scss' as *;
+@use '../custome.scss' as *;
+@use '../components/animation.scss' as *;
+body{
+    background-color: $primary;
+}
+
+.intro{
+    background-color: $pink;
+    padding-top: 5rem;
+    .intros{
+        font-size: 1.5rem;
+        .pictures{
+            position: relative;
+            padding: 0rem 2rem;
+        }
+    }
+}
+
+
+.play-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: $white;
+    border: none;
+    animation: pulse-border 3s linear infinite;
+    animation-delay: 3s;
+    &:hover{
+        background-color: $primary;
+    }
+    a{
+        color: $black;
+        font-size: 3rem;
+        padding: 0rem 0.75rem;
+     }
+}

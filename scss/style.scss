@@ -1,0 +1,15 @@
+@use './custome.scss';
+@use './fontawesome.scss';
+
+//Components
+@use './components/mixin.scss';
+@use './components/animation.scss';
+@use './components/headingline.scss';
+
+//Sections
+@use './section/navbar.scss';
+@use './section/intro.scss';
+@use './section/wishes.scss';
+@use './section/favorite.scss';
+@use './section/answer.scss';
+@use './section/gallery.scss';

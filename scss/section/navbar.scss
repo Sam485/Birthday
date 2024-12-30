@@ -1,0 +1,10 @@
+@use '../custome.scss' as *;
+@use '../components/mixin.scss' as *;
+
+.heading{
+    padding: 1rem;
+    a{
+        font-size: 1.5rem;
+        color: $white;
+    }
+}

@@ -1,0 +1,20 @@
+@use '../components/mixin.scss' as *;
+@use '../custome.scss' as *;
+
+
+.rows{
+    padding: 2rem;
+    .card{
+    
+        padding: 20px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        i{
+            font-size: 4rem;
+            color: rgb(0, 145, 255);
+            &:hover{
+                color: $gray-600;
+            }
+        }
+    }
+}

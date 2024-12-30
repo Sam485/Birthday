@@ -1,0 +1,9 @@
+@use '../custome.scss' as *;
+
+@keyframes pulse-border{
+    0%{
+        left: 3rem;
+    }
+    100%{
+    }
+}

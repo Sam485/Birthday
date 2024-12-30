@@ -1,0 +1,27 @@
+@use '../custome.scss' as *;
+@use '../components/mixin.scss' as *;
+
+.favorite-food{
+    background-color: $pink;
+    padding: 1rem;
+    .food-block{
+        padding: 0 10rem;
+        color: #dbf9d8;
+        .food-column{
+            font-size: 1.1rem;
+            margin-left: 2rem;
+            margin-bottom: 0.875rem;    
+            background-color: $green;
+            border-radius: 3rem;
+            @include media-breakpoint-up(md){
+                margin-left: 5rem;
+            }
+            padding: 2rem;
+            .rates{
+                i{
+                    color: yellow;
+                }
+            }
+        }
+    }
+}

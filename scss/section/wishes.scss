@@ -1,0 +1,13 @@
+@use '../custome.scss' as *;
+
+.wishes{
+
+    .wishes1{
+        border-radius: 3rem;
+        padding: 2rem;
+        font-size: 1.1rem;
+        @include media-breakpoint-up(lg){
+            margin: 2rem;
+        }
+    }
+}
