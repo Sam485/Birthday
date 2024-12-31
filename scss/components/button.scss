@@ -1,0 +1,21 @@
+@use '../custome.scss' as *;
+@use './mixin.scss' as *;
+
+.button{
+    border: none;
+    background: $white;
+    padding: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+     &:hover{
+        @include gradient;
+    }
+    .icons{
+        background: black;
+        color:white;
+        font-size: 2rem;
+        border-radius: 50%;
+        padding: 0.15rem 0.675rem;
+    }
+}

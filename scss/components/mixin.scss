@@ -1,1 +1,5 @@
 @use '../custome.scss' as *;
+
+@mixin gradient{
+background-image: linear-gradient(to right, #ffc0ed, #fda7d9, #fb8dc2, #f872a9, #f3548c);
+}
