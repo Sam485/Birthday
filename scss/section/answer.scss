@@ -4,8 +4,13 @@
 
 .rows{
     padding: 2rem;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    @include media-breakpoint-up(md){
+        margin-left: 30rem;
+        margin-bottom: 2rem;
+    }
     .card{
-    
         padding: 20px;
         padding-bottom: 50px;
         padding-top: 50px;

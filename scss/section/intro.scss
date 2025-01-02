@@ -1,6 +1,7 @@
 @use '../components/mixin.scss' as *;
 @use '../custome.scss' as *;
 @use '../components/animation.scss' as *;
+
 body{
     background-color: $primary;
 }
@@ -8,6 +9,7 @@ body{
 .intro{
     background-color: $pink;
     padding-top: 5rem;
+    margin-top: 3rem;
     .intros{
         font-size: 1.5rem;
         .pictures{

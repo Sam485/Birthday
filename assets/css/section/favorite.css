@@ -11850,12 +11850,17 @@ textarea.form-control-lg {
   padding: 1rem;
 }
 .favorite-food .food-block {
-  padding: 0 10rem;
+  padding: 0;
   color: #dbf9d8;
+}
+@media (min-width: 768px) {
+  .favorite-food .food-block {
+    padding: 0 10rem;
+  }
 }
 .favorite-food .food-block .food-column {
   font-size: 1.1rem;
-  margin-left: 2rem;
+  margin-left: 0rem;
   margin-bottom: 0.875rem;
   background-color: #49974b;
   border-radius: 3rem;

@@ -22371,6 +22371,7 @@ body {
 .intro {
   background-color: #f3548c;
   padding-top: 5rem;
+  margin-top: 3rem;
 }
 .intro .intros {
   font-size: 1.5rem;
@@ -22414,12 +22415,17 @@ body {
   padding: 1rem;
 }
 .favorite-food .food-block {
-  padding: 0 10rem;
+  padding: 0;
   color: #dbf9d8;
+}
+@media (min-width: 768px) {
+  .favorite-food .food-block {
+    padding: 0 10rem;
+  }
 }
 .favorite-food .food-block .food-column {
   font-size: 1.1rem;
-  margin-left: 2rem;
+  margin-left: 0rem;
   margin-bottom: 0.875rem;
   background-color: #49974b;
   border-radius: 3rem;
@@ -22436,6 +22442,14 @@ body {
 
 .rows {
   padding: 2rem;
+  margin-left: 0;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .rows {
+    margin-left: 30rem;
+    margin-bottom: 2rem;
+  }
 }
 .rows .card {
   padding: 20px;
@@ -22473,6 +22487,10 @@ body {
   /*width:303px;*/
   float: left;
   margin-bottom: 10px;
+}
+
+.margins {
+  margin-bottom: 8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
