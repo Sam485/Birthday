@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 /* Theme Color */
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
@@ -22399,17 +22400,70 @@ body {
   padding: 0rem 0.75rem;
 }
 
-.wishes .wishes1 {
-  border-radius: 3rem;
-  padding: 2rem;
-  font-size: 1.1rem;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
-@media (min-width: 992px) {
-  .wishes .wishes1 {
-    margin: 2rem;
+
+.container .card {
+  max-width: 500px;
+  height: 215px;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  background-color: #f3548c;
+}
+
+.container .card:hover {
+  height: 600px;
+}
+
+.container .card .imgContainer {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  top: -50px;
+  left: 12%;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+  .container .card .imgContainer {
+    left: 22%;
   }
 }
 
+.container .card .imgContainer img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.container .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #000;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+@media (max-width: 330px) {
+  .container .card .imgContainer {
+    left: -2px;
+  }
+}
 .favorite-food {
   background-color: #f3548c;
   padding: 1rem;
