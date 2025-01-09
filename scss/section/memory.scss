@@ -1,0 +1,220 @@
+@use '../components/mixin.scss' as *;
+@use '../custome.scss' as *;
+
+.main{
+	position: relative;
+	width: auto;
+	height: 100vh;
+	background-color: $light-green;
+	font-family: 'Niconne', cursive;
+}
+.pic{
+	background-color: white;
+}
+.photo1{
+	height: 20vw;
+	width: 18vw;
+	position: absolute;
+	left: 10vw;
+	top: 3vw;
+	transform: rotate(-20deg);
+}
+.photo2{
+	height: 20vw;
+	width: 18vw;
+	position: absolute;
+	left: 78vw;
+	top: 3vw;
+	transform: rotate(20deg);
+}
+.photo3{
+	height: 20vw;
+	width: 18vw;
+	position: absolute;
+	left: 38vw;
+	top: 25vw;
+	transform: rotate(-20deg);
+}
+.caption1{
+	height: 18vw;
+	width: 18vw;
+	position: absolute;
+	left: 32vw;
+	top: 3vw;
+	background-color: white;
+	transform: rotate(20deg);
+	opacity: 0;
+	border-radius: 15vw;
+	z-index: 1;
+}
+
+
+
+.bubble1{
+	width: 0;
+    height: 0;
+	border-top: 3vw solid transparent;
+    border-right: 7vw solid white;
+    border-bottom: 3vw solid transparent;
+	position: absolute;
+	left: 30vw;
+	top: 15vw;
+	transform: rotate(-20deg);
+	opacity: 0;
+}
+.bubble2{
+	width: 5vw;
+	height: 5vw;
+	border-top: 3vw solid transparent;
+    border-left: 7vw solid white;
+    border-bottom: 3vw solid transparent;
+	position: absolute;
+	left: 71vw;
+	top: 14vw;
+	transform: rotate(20deg);
+	opacity: 0;
+}
+.bubble3{
+	width: 5vw;
+	height: 5vw;
+	border-top: 3vw solid transparent;
+    border-right: 7vw solid white;
+    border-bottom: 3vw solid transparent;
+	position: absolute;
+	left: 58vw;
+	top: 36vw;
+	transform: rotate(-20deg);
+	opacity: 0;
+}
+
+.caption2{
+	height: 18vw;
+	width: 18vw;
+	position: absolute;
+	left: 56vw;
+	top: 3vw;
+	background-color: white;
+	transform: rotate(-20deg);
+	opacity: 0;
+	border-radius: 15vw;
+	z-index: 1;
+}
+.caption3{
+	height: 18vw;
+	width: 18vw;
+	position: absolute;
+	left: 60vw;
+	top: 25vw;
+	background-color: white;
+	transform: rotate(20deg);
+	opacity: 0;
+	border-radius: 15vw;
+	z-index: 1;
+}
+img{
+	height: 15vw;
+	width: 90%;
+	margin-top: 1vw;
+}
+.cap{
+	padding: 2vw;
+	transform: none;
+}
+.cap p{
+	position: relative;
+	top: 1vw;
+	font-size: 2vw;
+}
+@media only screen and (max-width: 425px){
+	.main{
+		height: 300vw;
+	}
+	.photo1{
+	    height: 50vw;
+	    width: 44vw;
+	    position: absolute;
+	    left: 10vw;
+	    top: 10vw;
+    }
+	.photo2{
+	    height: 50vw;
+	    width: 44vw;
+	    position: absolute;
+		left: 48vw;
+	    top: 95vw;
+    }
+	.photo3{
+	    height: 50vw;
+	    width: 44vw;
+	    position: absolute;
+		left: 10vw;
+	    top: 180vw;
+    }
+	img{
+	    height: 35vw;
+	    width: 90%;
+	    margin-top: 3vw;
+    }
+	.caption1{
+	    height: 40vw;
+	    width: 40vw;
+	    position: absolute;
+	    left: 58vw;
+	    top: 3vw;
+	    opacity: 0;
+	    border-radius: 40vw;
+		z-index: 1;
+    }
+	.caption2{
+	    height: 40vw;
+	    width: 40vw;
+	    position: absolute;
+	    left: 5vw;
+	    top: 92vw;
+	    border-radius: 40vw;
+		z-index: 1;
+    }
+	.caption3{
+	    height: 40vw;
+	    width: 40vw;
+	    position: absolute;
+	    left: 60vw;
+	    top: 180vw;
+	    border-radius: 40vw;
+		z-index: 1;
+    }
+	.bubble1{
+	    border-top: 9vw solid transparent;
+        border-right: 21vw solid white;
+        border-bottom: 9vw solid transparent;
+	    position: absolute;
+	    left: 50vw;
+	    top: 15vw;
+	    transform: rotate(-20deg);
+    }
+	.bubble2{
+	    border-top: 9vw solid transparent;
+        border-right: 21vw solid white;
+        border-bottom: 9vw solid transparent;
+	    position: absolute;
+		left: 17vw;
+	    top: 110vw;
+	    transform: rotate(-20deg);
+    }
+	.bubble3{
+	    border-top: 9vw solid transparent;
+        border-right: 21vw solid white;
+        border-bottom: 9vw solid transparent;
+	    position: absolute;
+		left: 50vw;
+	    top: 201vw;
+	    transform: rotate(-20deg);
+    }
+	.cap{
+	    padding: 4vw;
+	}
+	.cap p{
+		font-size: 1rem;
+		top: 6vw;
+	}
+}
