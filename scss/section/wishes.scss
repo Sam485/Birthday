@@ -27,13 +27,13 @@
     position: relative;
     width:250px;
     height:150px;
-    top:-50px;
-    left:12%;
+    top:-120px;
+    left:15%;
     z-index: 1;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     @include media-breakpoint-up(md){
-        left:22%;
+        left:24%;
     }
+
 }
 .container .card .imgContainer img
 {
