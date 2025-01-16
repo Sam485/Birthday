@@ -23046,17 +23046,71 @@ img {
   justify-content: center;
   flex-direction: column;
   z-index: 9999;
-  background-color: #f3f3f3;
+  background-image: url(https://img.freepik.com/premium-photo/party-room-colorful-decoration-by-balloon-birthday-party-event-product-display-3d-rendering_26018-2935.jpg?uid=R92172466&ga=GA1.1.239982076.1735217048&semt=ais_hybrid);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .birthday {
   text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.birthday h1 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+@media (min-width: 768px) {
+  .birthday h1 {
+    top: 50%;
+    left: 40%;
+  }
+}
+.birthday img {
+  width: 20%;
+  height: 20%;
+}
+
+.panda {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+
+.cake {
+  position: absolute;
+  right: 30%;
+  bottom: 20%;
+}
+
+.hug {
+  position: absolute;
+  right: 15%;
+  top: 30%;
+}
+
+.wish {
+  position: absolute;
+  left: 10%;
+  bottom: 20%;
 }
 
 .balloons {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+@media (min-width: 768px) {
+  .balloons {
+    top: 40%;
+    left: 40%;
+  }
 }
 
 .balloon {
