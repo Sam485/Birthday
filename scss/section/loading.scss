@@ -1,113 +1,139 @@
+/* styles.css */
 
-:root {
-    --c_01: #f3548c;
-    --c_02: #000;
-    --c_03: #fff;
-    --size: 12vmin;
-    --loader_w: calc(var(--size) * 6);
-    --loader_h: calc(var(--size) * 2.3);
-    --bubble: calc(var(--size) * 1.5);
-    --shine: calc(var(--size) / 5);
-  }
-  #loader{
+@use '../custome.scss' as *;
+@use '../components/mixin.scss' as *;
+
+#loader {
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--c_02);
-  }
-  
-  .loader {
-    width: var(--loader_w);
-    height: var(--loader_h);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999;
+    background-image: url(https://img.freepik.com/premium-photo/party-room-colorful-decoration-by-balloon-birthday-party-event-product-display-3d-rendering_26018-2935.jpg?uid=R92172466&ga=GA1.1.239982076.1735217048&semt=ais_hybrid);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.birthday {
+    text-align: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	h1{
+		position: absolute;
+		top: 50%;
+		left: 25%;
+		@include media-breakpoint-up(md){
+			top: 50%;
+			left: 40%;
+		}
+	}
+	img{
+		width: 20%;
+		height: 20%;
+	}
+}
+.panda{
+	position: absolute;
+	left:10%;
+	top:10%;
+}
+.cake{
+	position: absolute;
+	right:30%;
+	bottom:20%;
+}
+.hug{
+	position: absolute;
+	right:15%;
+	top:30%;
+}
+.wish{
+	position: absolute;
+	left:10%;
+	bottom:20%;
+}
+
+
+
+.balloons {
     display: flex;
     justify-content: center;
-    position: relative;
-    margin: calc(50vh - var(--loader_h)) auto 0;
-  }
-  
-  .bubble {
-    width: var(--bubble);
-    height: var(--bubble);
-    -webkit-animation: blow 1.6s linear alternate infinite;
-            animation: blow 1.6s linear alternate infinite;
-    background-color: var(--c_01);
+    margin-bottom: 20px;
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	@include media-breakpoint-up(md){
+		top: 40%;
+		left: 40%;
+	}
+}
+
+.balloon {
+    width: 50px;
+    height: 70px;
     border-radius: 50%;
+    background-color: #ff4757;
+    position: relative;
+    margin: 0 10px;
+    animation: float 2s ease-in-out infinite;
+}
+
+.balloon:before {
+    content: '';
     position: absolute;
-    bottom: calc(var(--size) / 1.5);
-    left: 45%;
-    top: 0;
-    transform: scale(0.5) translateY(50%);
-    outline: 1px solid transparent;
-  }
-  .bubble__shine {
-    background-color: var(--c_03);
-    position: absolute;
-  }
-  .bubble__shine--lg {
-    width: var(--shine);
-    height: calc(var(--shine) * 2.5);
-    border-radius: 100% 50% 40% 100%/50% 30% 30% 100%;
-    top: 2%;
-    left: 26%;
-    transform: rotateZ(60deg);
-  }
-  .bubble__shine--sm {
-    width: calc(var(--shine) / 2);
-    height: calc(var(--shine) / 2);
-    border-radius: 50% 50% 40% 100%/50% 50% 50% 100%;
-    top: 32%;
-    left: 9%;
-  }
-  
-  .text {
-    align-self: flex-end;
-    color: var(--c_01);
-    font-family: "Major Mono Display", monospace;
-    font-size: var(--size);
-    margin: 0;
-    text-transform: uppercase;
-  }
-  .text__highlight {
-    color: var(--c_03);
-  }
-  
-  @-webkit-keyframes blow {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background-color: #2f3542;
+}
+
+.balloon .one {
+    background-color: #ff4757;
+}
+
+.balloon .two {
+    background-color: #1e90ff;
+    animation-delay: 0.2s;
+}
+
+.balloon .three {
+    background-color: #2ed573;
+    animation-delay: 0.4s;
+}
+
+.balloon .four {
+    background-color: #ffa502;
+    animation-delay: 0.6s;
+}
+
+@keyframes float {
     0% {
-      transform: scale(0.5) translateY(50%);
+        transform: translateY(0);
     }
-    20% {
-      transform: scale(0.6) translateY(33%);
+    50% {
+        transform: translateY(-20px);
     }
-    40% {
-      transform: scale(0.7) translateY(21%);
+    100% {
+        transform: translateY(0);
     }
-    60% {
-      transform: scale(0.8) translateY(12%);
-    }
-    80% {
-      transform: scale(0.9) translateY(5%);
-    }
-    93%, 100% {
-      transform: scale(1) translateY(0) translateZ(0);
-    }
-  }
-  
-  @keyframes blow {
-    0% {
-      transform: scale(0.5) translateY(50%);
-    }
-    20% {
-      transform: scale(0.6) translateY(33%);
-    }
-    40% {
-      transform: scale(0.7) translateY(21%);
-    }
-    60% {
-      transform: scale(0.8) translateY(12%);
-    }
-    80% {
-      transform: scale(0.9) translateY(5%);
-    }
-    93%, 100% {
-      transform: scale(1) translateY(0) translateZ(0);
-    }
-  }
+}
+
+h1 {
+    color: #2f3542;
+}
+
+#content {
+    padding: 20px;
+    text-align: center;
+}
+
+
