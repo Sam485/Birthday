@@ -11881,9 +11881,15 @@ textarea.form-control-lg {
     left: 40%;
   }
 }
-.birthday img {
+.birthday .img {
   width: 20%;
   height: 20%;
+}
+@media (min-width: 768px) {
+  .birthday .img {
+    height: 30%;
+    width: 20%;
+  }
 }
 
 .panda {
@@ -11895,19 +11901,19 @@ textarea.form-control-lg {
 .cake {
   position: absolute;
   right: 30%;
-  bottom: 20%;
+  bottom: 5%;
 }
 
 .hug {
   position: absolute;
-  right: 15%;
-  top: 30%;
+  right: 5%;
+  top: 5%;
 }
 
 .wish {
   position: absolute;
-  left: 10%;
-  bottom: 20%;
+  left: 2%;
+  bottom: 10%;
 }
 
 .balloons {
