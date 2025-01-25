@@ -22357,9 +22357,6 @@ readers do not read off random characters that represent icons */
   padding: 0.15rem 0.675rem;
 }
 
-.heading {
-  padding: 1rem;
-}
 .heading a {
   font-size: 1.5rem;
   color: #fff;
@@ -22497,12 +22494,8 @@ body {
   padding: 2rem;
   margin-left: 0;
   margin-bottom: 2rem;
-}
-@media (min-width: 768px) {
-  .rows {
-    margin-left: 30rem;
-    margin-bottom: 2rem;
-  }
+  display: flex;
+  justify-content: center;
 }
 .rows .card {
   padding: 20px;

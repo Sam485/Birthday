@@ -1,25 +1,22 @@
 @use '../components/mixin.scss' as *;
 @use '../custome.scss' as *;
 
-
-.rows{
-    padding: 2rem;
-    margin-left: 0;
-    margin-bottom: 2rem;
-    @include media-breakpoint-up(md){
-        margin-left: 30rem;
-        margin-bottom: 2rem;
+.rows {
+  padding: 2rem;
+  margin-left: 0;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  .card {
+    padding: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    i {
+      font-size: 4rem;
+      color: rgb(0, 145, 255);
+      &:hover {
+        color: $gray-600;
+      }
     }
-    .card{
-        padding: 20px;
-        padding-bottom: 50px;
-        padding-top: 50px;
-        i{
-            font-size: 4rem;
-            color: rgb(0, 145, 255);
-            &:hover{
-                color: $gray-600;
-            }
-        }
-    }
+  }
 }

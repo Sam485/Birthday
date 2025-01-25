@@ -11849,12 +11849,8 @@ textarea.form-control-lg {
   padding: 2rem;
   margin-left: 0;
   margin-bottom: 2rem;
-}
-@media (min-width: 768px) {
-  .rows {
-    margin-left: 30rem;
-    margin-bottom: 2rem;
-  }
+  display: flex;
+  justify-content: center;
 }
 .rows .card {
   padding: 20px;
