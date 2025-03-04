@@ -11846,6 +11846,7 @@ textarea.form-control-lg {
   }
 }
 #myCarousel .carousel-item .mask {
+  scroll-margin-top: 10rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -11866,7 +11867,7 @@ textarea.form-control-lg {
 #myCarousel h4 {
   font-size: 50px;
   margin-bottom: 15px;
-  color: #FFF;
+  color: #000;
   line-height: 100%;
   letter-spacing: 0.5px;
   font-weight: 600;
@@ -11875,13 +11876,13 @@ textarea.form-control-lg {
 #myCarousel p {
   font-size: 18px;
   margin-bottom: 15px;
-  color: #d5d5d5;
+  color: #000;
 }
 
 #myCarousel .carousel-item a {
-  background: #F47735;
+  background: #f47735;
   font-size: 14px;
-  color: #FFF;
+  color: #fff;
   padding: 13px 32px;
   display: inline-block;
 }
@@ -11914,7 +11915,10 @@ textarea.form-control-lg {
   max-width: 100%;
 }
 
-#myCarousel h4, #myCarousel p, #myCarousel a, #myCarousel .carousel-item .mask img {
+#myCarousel h4,
+#myCarousel p,
+#myCarousel a,
+#myCarousel .carousel-item .mask img {
   -webkit-animation-duration: 1s;
   animation-duration: 1.2s;
   -webkit-animation-fill-mode: both;
@@ -11942,7 +11946,8 @@ textarea.form-control-lg {
   justify-content: center;
 }
 
-.carousel-next, .carousel-prev {
+.carousel-next,
+.carousel-prev {
   height: 40px;
   width: 40px;
   padding: 12px;
@@ -11954,7 +11959,8 @@ textarea.form-control-lg {
   align-items: center;
   margin-left: 1rem;
 }
-.carousel-next:hover, .carousel-prev:hover {
+.carousel-next:hover,
+.carousel-prev:hover {
   background-color: #49974b;
 }
 
@@ -11982,27 +11988,42 @@ textarea.form-control-lg {
   transition-property: opacity;
 }
 
-.carousel-fade .carousel-item-next.carousel-item-left, .carousel-fade .carousel-item-prev.carousel-item-right, .carousel-fade .carousel-item.active {
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right,
+.carousel-fade .carousel-item.active {
   opacity: 1;
 }
 
-.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-right.active {
+.carousel-fade .carousel-item-left.active,
+.carousel-fade .carousel-item-right.active {
   opacity: 0;
 }
 
-.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+.carousel-fade .carousel-item-left.active,
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item-prev.active,
+.carousel-fade .carousel-item.active {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
 @supports (transform-style: preserve-3d) {
-  .carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+  .carousel-fade .carousel-item-left.active,
+  .carousel-fade .carousel-item-next,
+  .carousel-fade .carousel-item-prev,
+  .carousel-fade .carousel-item-prev.active,
+  .carousel-fade .carousel-item.active {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+.carousel-fade .carousel-item-left.active,
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item-prev.active,
+.carousel-fade .carousel-item.active {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }

@@ -11846,10 +11846,11 @@ textarea.form-control-lg {
   }
 }
 .main {
+  scroll-margin-top: 45rem;
   position: relative;
   width: auto;
   height: 100vh;
-  background-color: #0cdaa4;
+  background-color: #f3548c;
   font-family: "Niconne", cursive;
 }
 

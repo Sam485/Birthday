@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/fontawesome.css" />
     <link rel="icon" href="images/favicon.ico" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </head>
   <body>
     <!-- Loading -->
@@ -70,13 +72,13 @@
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="memory.html">Memory</a>
+              <a class="nav-link" href="#memory">Memory</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="plan.html">Plan</a>
+              <a class="nav-link" href="#myCarousel">Plan</a>
             </li>
           </ul>
         </div>
@@ -102,9 +104,9 @@
                 alt="cake-54"
                 class="img-fluid"
               />
-              <button class="play-button rounded-circle">
-                <a href=""><i class="fa-solid fa-play"></i></a>
-              </button>
+              <a href="" class="play-btn"
+                ><i class="fa-solid fa-play icon"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -338,8 +340,8 @@
           <span class="heading-line"></span>
           <div class="text-center">
             <img
+              class="img-fluid"
               src="https://img.freepik.com/free-photo/front-view-amazed-young-man-with-crown-holding-balloons-yellow_179666-10218.jpg?ga=GA1.1.239982076.1735217048&semt=ais_hybrid"
-              width="200"
             />
             <span class="d-block mt-3"
               >What do you want to eat the on our next date?<br />
@@ -357,12 +359,651 @@
       </div>
     </div>
 
+    <!-- gallery -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+    <div class="container bg-primary" id="gallery">
+      <div class="row">
+        <div class="col-lg-12 text-center my-2">
+          <h4 class="display-5 fw-bold">Pictures of my best Girl.</h4>
+          <span class="heading-line"></span>
+        </div>
+      </div>
+      <div class="portfolio-menu mt-2 mb-4">
+        <ul>
+          <li class="btn btn-outline-dark active" data-filter="*">All</li>
+          <li class="btn btn-outline-dark" data-filter=".us">Us</li>
+          <li class="btn btn-outline-dark" data-filter=".style">Style</li>
+          <li class="btn btn-outline-dark text" data-filter=".cute">Cutest</li>
+        </ul>
+      </div>
+      <div class="portfolio-item row">
+        <div class="item us col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (1).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img src="./takeout-001/pic1 (1).jpg" alt="pic1" class="img-fluid"
+          /></a>
+        </div>
+        <div class="item style col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (2).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img src="./takeout-001/pic1 (2).jpg" alt="pic2" class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (3).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img src="./takeout-001/pic1 (3).jpg" alt="pic3" class="img-fluid"
+          /></a>
+        </div>
+        <div class="item us col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (4).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img src="./takeout-001/pic1 (4).jpg" alt="pic4" class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (5).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img src="./takeout-001/pic1 (5).jpg" alt="pic5" class="img-fluid"
+          /></a>
+        </div>
+        <div class="item style col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (6).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img src="./takeout-001/pic1 (6).jpg" alt="pic6" class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (7).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img src="./takeout-001/pic1 (7).jpg" alt="pic7" class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (8).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img src="./takeout-001/pic1 (8).jpg" alt="pic8" class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (9).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img src="./takeout-001/pic1 (9).jpg" alt="pic9" class="img-fluid"
+          /></a>
+        </div>
+        <div class="item us col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (10).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (10).jpg"
+              alt="pic10"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item us col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (11).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (11).jpg"
+              alt="pic11"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (12).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (12).jpg"
+              alt="pic12"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (13).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (13).jpg"
+              alt="pic13"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item style col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (14).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (14).jpg"
+              alt="pic14"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item us col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (15).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (15).jpg"
+              alt="pic15"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item style col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (16).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (16).jpg"
+              alt="pic16"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item style col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (17).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (17).jpg"
+              alt="pic17"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (18).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (18).jpg"
+              alt="pic18"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (19).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (19).jpg"
+              alt="pic19"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item style col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (20).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (20).jpg"
+              alt="pic20"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (21).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (21).jpg"
+              alt="pic21"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item us col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (22).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (22).jpg"
+              alt="pic22"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (23).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (23).jpg"
+              alt="pic23"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item style us col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (24).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (24).jpg"
+              alt="pic24"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item style col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (25).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (25).jpg"
+              alt="pic25"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (26).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (26).jpg"
+              alt="pic26"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute style col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (27).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (27).jpg"
+              alt="pic27"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item style col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (28).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (28).jpg"
+              alt="pic28"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item us col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (29).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (29).jpg"
+              alt="pic29"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item us col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (30).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (30).jpg"
+              alt="pic30"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (31).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (31).jpg"
+              alt="pic31"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (32).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (32).jpg"
+              alt="pic32"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item style col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (33).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (33).jpg"
+              alt="pic33"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item style col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (34).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (34).jpg"
+              alt="pic34"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item style col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (35).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (35).jpg"
+              alt="pic35"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (36).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (36).jpg"
+              alt="pic36"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (37).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (37).jpg"
+              alt="pic37"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item style col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (38).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (38).jpg"
+              alt="pic38"
+              class="img-fluid"
+          /></a>
+        </div>
+        <div class="item cute col-lg-3 col-md-4 col-6 col-sm">
+          <a
+            href="./takeout-001/pic1 (39).jpg"
+            class="fancylight popup-btn"
+            data-fancybox-group="light"
+            ><img
+              src="./takeout-001/pic1 (39).jpg"
+              alt="pic39"
+              class="img-fluid"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5 margins">
+      <a
+        href="https://photos.app.goo.gl/SAkV5Es37fN37XNH6"
+        target="_blank"
+        class="button rounded-pill"
+        >More Pictures
+        <span class="icons"><i class="fa-solid fa-arrow-right"></i></span
+      ></a>
+    </div>
+    <!-- MEMORY -->
+    <div class="col-lg-12 text-center my-2">
+      <h4 class="display-5 fw-bold">Our Best Memory</h4>
+      <span class="heading-line"></span>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#f3548c"
+        fill-opacity="1"
+        d="M0,96L30,128C60,160,120,224,180,218.7C240,213,300,139,360,117.3C420,96,480,128,540,170.7C600,213,660,267,720,272C780,277,840,235,900,186.7C960,139,1020,85,1080,96C1140,107,1200,181,1260,192C1320,203,1380,149,1410,122.7L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+      ></path>
+    </svg>
+    <div class="main" id="memory">
+      <div class="pic photo1 z-depth-3">
+        <center><img src="takeout-001/pic1 (1).jpg" /></center>
+      </div>
+      <div class="caption1 cap">
+        <center><p>There are three best memory.</p></center>
+      </div>
+      <div class="bubble bubble1"></div>
+
+      <div class="pic photo2 z-depth-3">
+        <center><img src="takeout-001/pic1 (11).jpg" /></center>
+      </div>
+      <div class="caption2 cap">
+        <center><p>I am waiting for her respond.</p></center>
+      </div>
+      <div class="bubble bubble2"></div>
+
+      <div class="pic photo3 z-depth-3">
+        <center><img src="takeout-001/pic1 (15).jpg" /></center>
+      </div>
+      <div class="caption3 cap">
+        <center>
+          <p>When meow meow sent it to me I will update it in here.</p>
+        </center>
+      </div>
+      <div class="bubble bubble3"></div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#f3548c"
+        fill-opacity="1"
+        d="M0,96L30,128C60,160,120,224,180,218.7C240,213,300,139,360,117.3C420,96,480,128,540,170.7C600,213,660,267,720,272C780,277,840,235,900,186.7C960,139,1020,85,1080,96C1140,107,1200,181,1260,192C1320,203,1380,149,1410,122.7L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
+      ></path>
+    </svg>
+
+    <!-- Plan -->
+
+    <div
+      id="myCarousel"
+      class="carousel slide carousel-fade bg-primary"
+      data-ride="carousel"
+    >
+      <div class="col-lg-12 text-center my-2">
+        <h4 class="display-5 fw-bold">Our Future Plan</h4>
+        <span class="heading-line"></span>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="mask flex-center">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-7 order-md-1 order-2">
+                  <h4>Plan 1</h4>
+                  <p>
+                    Our first plan is to get married with each other. <br />
+                    We will try our best together to make that happen ok.
+                  </p>
+                </div>
+                <div class="col-md-5 order-md-2 order-1">
+                  <img
+                    src="https://img.freepik.com/premium-photo/wedding-cake-bride-groom-couple-cut-wedding-party-event-restaurant-church_177530-126.jpg?uid=R92172466&ga=GA1.1.239982076.1735217048&semt=ais_hybrid"
+                    class="memory-img"
+                    alt="slide"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="mask flex-center">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-7 order-md-1 order-2">
+                  <h4>Plan 2</h4>
+                  <p>
+                    For the second plan is I want to make sure that whenever
+                    you're with me.<br />
+                    You will always get to eat anything that you wanted to.
+                  </p>
+                </div>
+                <div class="col-md-5 order-md-2 order-1">
+                  <img
+                    src="https://img.freepik.com/free-photo/papaya-salad-served-with-rice-noodles-vegetable-salad-decorated-with-thai-food-ingredients_1150-26509.jpg?uid=R92172466&ga=GA1.1.239982076.1735217048&semt=ais_hybrid"
+                    class="memory-img"
+                    alt="slide"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="mask flex-center">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-7 order-md-1 order-2">
+                  <h4>Plan 3</h4>
+                  <p>
+                    Our third plan is to travel to many other places together.
+                    <br />
+                    I will take you to many different places. and spent so many
+                    good time together ok.
+                  </p>
+                </div>
+                <div class="col-md-5 order-md-2 order-1">
+                  <img
+                    src="https://img.freepik.com/free-photo/traveler-asian-couple-direction-location-map-beijing-china_7861-1432.jpg?uid=R92172466&ga=GA1.1.239982076.1735217048&semt=ais_hybrid"
+                    class="memory-img"
+                    alt="slide"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="mask flex-center">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-7 order-md-1 order-2">
+                  <h4>Plan 4</h4>
+                  <p>
+                    Our fourth plan is to have our own house and car.<br />
+                    I know for sure that we will get what we want when we're
+                    together.So let's try our best together ok.
+                  </p>
+                </div>
+                <div class="col-md-5 order-md-2 order-1">
+                  <img
+                    src="https://img.freepik.com/free-photo/charming-yellow-house-with-wooden-windows-green-grassy-garden_181624-8074.jpg?uid=R92172466&ga=GA1.1.239982076.1735217048&semt=ais_hybrid"
+                    class="memory-img"
+                    alt="slide"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="mask flex-center">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-7 order-md-1 order-2">
+                  <h4>Plan 5</h4>
+                  <p>
+                    Our fifth plan is to live happily together.<br />
+                    I will do like what I have promsie you. I will make sure
+                    that you'll always be happy no matter what happen.
+                  </p>
+                </div>
+                <div class="col-md-5 order-md-2 order-1">
+                  <img
+                    src="https://media.istockphoto.com/id/1309245920/photo/cheerful-middle-eastern-family-of-three-having-fun-together-at-home.jpg?b=1&s=612x612&w=0&k=20&c=IRLNy-E4EtbNF3jk8WVpPcoUPWYsaDOSVEVabWHanqs="
+                    class="memory-img"
+                    alt="slide"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-carousel">
+        <a
+          class="carousel-prev rounded-circle"
+          href="#myCarousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-next rounded-circle"
+          href="#myCarousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!--slide end-->
+
     <footer class="flex-shrink-0 py-4 bg-dark text-white-50">
       <div class="container text-center">
         <small>For my Lovely girl friend.</small>
       </div>
     </footer>
 
+    <script src="./JS//plan.js"></script>
+    <script src="./JS/gallery.js"></script>
+    <script src="./JS/memory.js"></script>
     <script src="./assets/js/bootstrap.bundle.js"></script>
   </body>
 </html>

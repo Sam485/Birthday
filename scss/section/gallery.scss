@@ -1,33 +1,33 @@
 @use '../custome.scss' as *;
 @use '../components/mixin.scss' as *;
-
-
-.portfolio-menu{
-	text-align:center;
-    ul li{
-        display:inline-block;
-        margin:0;
-        list-style:none;
-        padding:10px 15px;
-        cursor:pointer;
-        -webkit-transition:all 05s ease;
-        -moz-transition:all 05s ease;
-        -ms-transition:all 05s ease;
-        -o-transition:all 05s ease;
-        transition:all .5s ease;
-    }
+#gallery {
+  scroll-margin-top: 8rem;
+}
+.portfolio-menu {
+  text-align: center;
+  ul li {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    -webkit-transition: all 05s ease;
+    -moz-transition: all 05s ease;
+    -ms-transition: all 05s ease;
+    -o-transition: all 05s ease;
+    transition: all 0.5s ease;
+  }
 }
 
-.portfolio-item{
-    /*width:100%;*/
-    .item{
-        /*width:303px;*/
-        float:left;
-        margin-bottom:10px;
-    }
+.portfolio-item {
+  /*width:100%;*/
+  .item {
+    /*width:303px;*/
+    float: left;
+    margin-bottom: 10px;
+  }
 }
 
-.margins{
-
-    margin-bottom: 8rem;
+.margins {
+  margin-bottom: 8rem;
 }

@@ -1,16 +1,19 @@
 @use '../components/mixin.scss' as *;
 @use '../custome.scss' as *;
-
 .rows {
   padding: 2rem;
-  margin-left: 0;
   margin-bottom: 2rem;
+  text-align: center;
   display: flex;
   justify-content: center;
   .card {
+    margin: 0.5rem;
+    width: 20rem;
+    height: auto;
     padding: 20px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    @include media-breakpoint-up(md) {
+      width: 40rem;
+    }
     i {
       font-size: 4rem;
       color: rgb(0, 145, 255);

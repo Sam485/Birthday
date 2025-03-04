@@ -11885,4 +11885,26 @@ body {
   padding: 0rem 0.75rem;
 }
 
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: none;
+  background: #0cdaa4;
+  padding: 1rem 1.5rem 1rem 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  border-radius: 50%;
+  animation: pulse-border 3s linear infinite;
+  animation-delay: 3s;
+}
+.play-btn .icons {
+  background: black;
+  color: white;
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 0.15rem 0.675rem;
+}
+
 /*# sourceMappingURL=intro.css.map */
